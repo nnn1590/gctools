@@ -34,6 +34,9 @@ smsdumpbanks$(EXE_EXTENSION): $(OBJECTS) smsdumpbanks.o
 smssynth$(EXE_EXTENSION): $(OBJECTS) smssynth.o
 	g++ $(LDFLAGS) -o $@ $^ $(LIBS)
 
+install:
+	cp $(EXECUTABLES) /usr/bin/
+
 clean:
 	$(RM) *.o $(EXECUTABLES) *.dSYM
 

@@ -49,6 +49,7 @@ prs:
 
 install: all
 	cd prs && make install && cd ..
+	cd sms && make install && cd ..
 	cp $(EXECUTABLES) /usr/bin/
 
 clean:
